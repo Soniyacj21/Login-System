@@ -3,7 +3,6 @@ import Signup from "./Signup";
 import Login from "./Login";
 import MainPage from "./MainPage";
 import "./styles.css";
-
 function App() {
   return (
     <Router>
