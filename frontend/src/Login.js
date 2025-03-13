@@ -7,7 +7,6 @@ function Login() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
-
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -17,12 +16,11 @@ function Login() {
       });
       localStorage.setItem("token", response.data.token);
       setMessage("Login successful");
-      navigate("/main"); // Redirect to MainPage after login
+      navigate("/main"); 
     } catch (error) {
       setMessage(error.response?.data?.error || "Login failed");
     }
   };
-
   return (
     <div className="form-container">
       <h2>Login</h2>
