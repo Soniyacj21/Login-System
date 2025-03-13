@@ -1,0 +1,38 @@
+.main-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://img.freepik.com/free-vector/gradient-connection-background_23-2150462050.jpg?t=st=1741863530~exp=1741867130~hmac=29052f39feff4d421648c109d0145d431a7c93be680d818bc512f05141ad0009&w=1800"); /* Replace with your own image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .welcome-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Small Logout Button in Top-Right Corner with Width 50px */
+  .logout-button {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 70px;
+    height: 30px;
+    font-size: 0.8rem;
+    background-color: rgba(28, 94, 174, 0.374);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: rgba(0, 38, 255, 0.279);
+  }
+  

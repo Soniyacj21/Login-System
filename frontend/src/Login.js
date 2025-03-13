@@ -17,7 +17,7 @@ function Login() {
       });
       localStorage.setItem("token", response.data.token);
       setMessage("Login successful");
-      navigate("/"); 
+      navigate("/main"); // Redirect to MainPage after login
     } catch (error) {
       setMessage(error.response?.data?.error || "Login failed");
     }
